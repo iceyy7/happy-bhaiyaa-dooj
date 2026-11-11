@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>bhaiya who is door</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="decorations"></div>
+
+
+    <!-- 1. OPENING ENVELOPE -->
+
+    <section class="screen active" id="openingScreen">
+
+        <div class="opening-content">
+
+            <p class="eyebrow">A little something for you hehe</p>
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-body">
+
+                    <span class="envelope-seal">✦</span>
+
+                    <span class="envelope-label">
+                        to my bhaiya
+                    </span>
+
+                </div>
+
+            </div>
+
+            <h1>yayy you've got something</h1>
+
+            <p>kholoooo iseee.</p>
+
+            <button class="main-btn" id="openEnvelope">
+                open ye message
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- 2. WELCOME LETTER -->
+
+    <section class="screen" id="welcomeScreen">
+
+        <div class="letter">
+
+            <div class="letter-top">
+                <span>FROM TERI PYARI sister</span>
+
+                <span class="postmark">
+                    SPECIAL<br>DELIVERY
+                </span>
+            </div>
+
+            <div class="stamp">✿</div>
+
+            <p class="letter-date">
+                tihihihihihi
+            </p>
+
+            <h1>Veer bhaiyaa,</h1>
+
+            <div class="letter-message">
+
+                <p>Happy Bhai Dooj Veer</p>
+
+                <p>
+                    you are loved for who you are betu trust me,
+                    you are so lovable and i believe in you bohott zyadaa
+                    everything is gonna be alright
+                    we will make sure
+                </p>
+
+                <p>
+                    So don't say anything bad about you bohot maarungi 
+                    you are so so so good and tere bina nothing is good isliye never say anything about leaving
+                </p>
+
+            </div>
+
+            <p class="letter-signature">
+                With love,<br>
+                your lil one
+            </p>
+
+            <div class="letter-bottom">
+                <span>HEHE</span>
+                <span>✦ ✦ ✦</span>
+            </div>
+
+        </div>
+
+        <button class="main-btn" onclick="showScreen('pujaScreen')">
+            Continue 
+        </button>
+
+    </section>
+<!-- 3. PUJA THALI -->
+
+<section class="screen" id="pujaScreen">
+
+    <p class="eyebrow">A little ritual</p>
+
+    <h1>proper tradition follow krenge</h1>
+
+    <p class="subtitle">
+        thali is looking weird kaam chla le aata ni h mujhe
+    </p>
+
+    <div class="thali">
+
+        <div class="thali-inner">
+
+            <!-- Decorative border -->
+            <div class="thali-border"></div>
+            <div class="thali-pattern"></div>
+
+            <!-- Diya -->
+            <div class="diya" id="diya">
+
+                <div class="diya-glow"></div>
+
+                <div class="flame"></div>
+
+                <div class="diya-bowl">
+                    <div class="diya-detail"></div>
+                </div>
+
+            </div>
+
+            <!-- Roli bowl -->
+            <div class="puja-bowl roli-bowl">
+                <div class="bowl-rim"></div>
+                <div class="roli-powder"></div>
+                <small>ROLI</small>
+            </div>
+
+            <!-- Rice bowl -->
+            <div class="puja-bowl rice-bowl">
+                <div class="bowl-rim"></div>
+                <div class="rice-grains">
+                    <span>✧</span>
+                    <span>✧</span>
+                    <span>✧</span>
+                    <span>✧</span>
+                    <span>✧</span>
+                </div>
+                <small>AKSHAT</small>
+            </div>
+
+            <!-- Sweets -->
+            <div class="sweet sweet-one">
+                <div class="sweet-top"></div>
+            </div>
+
+            <div class="sweet sweet-two">
+                <div class="sweet-top"></div>
+            </div>
+
+            <!-- Flowers -->
+            <div class="puja-flower flower-one">✿</div>
+            <div class="puja-flower flower-two">✿</div>
+            <div class="puja-flower flower-three">✿</div>
+            <div class="puja-flower flower-four">✿</div>
+
+            <!-- Decorative leaves -->
+            <div class="leaf leaf-one">❧</div>
+            <div class="leaf leaf-two">❧</div>
+
+            <!-- Kumkum marks -->
+            <div class="kumkum kumkum-one"></div>
+            <div class="kumkum kumkum-two"></div>
+
+        </div>
+
+    </div>
+
+    <p id="pujaMessage" class="interaction-message">
+        First, diya jalayein?
+    </p>
+
+    <button class="main-btn" id="lightDiya">
+        Lighten uppp the diya
+    </button>
+
+    <button
+        class="secondary-btn hidden"
+        id="pujaNext"
+        onclick="showScreen('tilakScreen')"
+    >
+        Continue
+    </button>
+
+</section>
+
+
+   <!-- 4. TILAK CEREMONY -->
+
+<section class="screen" id="tilakScreen">
+
+    <div class="tilak-heading">
+
+        <p class="eyebrow">
+            tilakkk ki bari
+        </p>
+
+        <h1>Teraaa Bhai Dooj Tilak</h1>
+
+        <p class="subtitle">
+            lesssgooooo
+        </p>
+
+    </div>
+
+
+    <!-- INTRO -->
+
+    <div class="tilak-intro" id="tilakIntro">
+
+        <div class="tilak-thali-mini">
+            <div class="mini-diya"></div>
+            <div class="mini-roli"></div>
+            <div class="mini-rice"></div>
+            <span>✿</span>
+        </div>
+
+        <h2>Ready for your tilak naa?</h2>
+
+        <p>
+            okay lessgooo
+        </p>
+
+        <button class="main-btn" id="beginTilak">
+            Begin
+        </button>
+
+    </div>
+
+
+    <!-- RECORDED VIDEO -->
+
+    <div class="tilak-video-container hidden"
+         id="tilakVideoContainer">
+
+        <p class="video-caption">
+            my blessings are always here
+        </p>
+
+        <div class="video-frame">
+
+            <video
+                id="tilakVideo"
+                src="assets/tilak-video.mp4"
+                playsinline
+                controls>
+            </video>
+
+        </div>
+
+        <p class="video-note">
+            hehe
+        </p>
+
+        <button class="secondary-btn" id="skipVideo">
+            Continue ->
+        </button>
+
+    </div>
+
+
+    <!-- PHOTO REVEAL -->
+
+    <div class="tilak-reveal hidden" id="tilakReveal">
+
+        <p class="eyebrow">
+            ye ceremony is toh complete
+        </p>
+
+        <h2>And abb chl ye dekh</h2>
+
+        <div class="blessing-photo">
+
+            <img
+                id="brotherTilakPhoto"
+                src="assets/brother-photo.jpeg"
+                alt="Bhai Dooj photo">
+
+            <span class="digital-tilak"></span>
+
+        </div>
+
+      <p class="blessing-text">
+    i hope when i am not able to hug you, my prayers do.
+    betu didi is so proud of you.
+</p>
+
+        <p class="blessing-signature">
+            didi boloo
+        </p>
+
+        <button class="main-btn" id="tilakNext">
+            CHALOOO let's do this ab
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- 5. SIBLING QUIZ -->
+
+    <section class="screen" id="quizScreen">
+
+        <p class="eyebrow">
+            Let's see how well you know uss
+        </p>
+
+        <h1>The quiz</h1>
+
+        <div class="quiz-card">
+
+            <div class="quiz-progress" id="quizProgress">
+                Question 1
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <div
+                id="answerOptions"
+                class="answer-options"
+            ></div>
+
+            <p
+                id="quizFeedback"
+                class="interaction-message"
+            ></p>
+
+            <button
+                class="main-btn hidden"
+                id="nextQuestion"
+            >
+                Next question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6. SCRAPBOOK -->
+
+    <section class="screen" id="scrapbookScreen">
+
+        <p class="eyebrow">
+            A few memoriess
+        </p>
+
+
+        <p class="scrapbook-subtitle">
+            A little collection
+        </p>
+
+
+        <div class="album-container">
+
+            <!-- COVER -->
+
+            <div class="scrap-cover" id="scrapCover">
+
+                <div class="cover-flower">✿</div>
+
+                <p>A collection of</p>
+
+                <h2>Little Memories</h2>
+
+                <span>hehe</span>
+
+                <div class="cover-line"></div>
+
+                <button
+                    class="main-btn"
+                    id="openScrapbook"
+                >
+                    Open
+                </button>
+
+            </div>
+
+
+            <!-- OPEN ALBUM -->
+
+            <div
+                class="album-spread hidden"
+                id="albumSpread"
+            >
+
+                <div class="album-binding"></div>
+
+
+                <!-- LEFT PAGE -->
+
+                <div class="album-page left-page">
+
+                    <span
+                        class="page-number"
+                        id="leftPageNumber"
+                    >
+                        01
+                    </span>
+
+                    <div
+                        class="album-photo"
+                        id="leftPhoto"
+                    >
+
+                        <span>YOUR PHOTO HERE </span>
+
+                    </div>
+
+                    <h2 id="leftTitle">
+                        Firstt photo na apni?
+                    </h2>
+
+                    <p id="leftText">
+                        Awww
+                    </p>
+
+                    <span class="page-sticker left-sticker">
+                        ✿
+                    </span>
+
+                </div>
+
+
+                <!-- RIGHT PAGE -->
+
+                <div class="album-page right-page">
+
+                    <span
+                        class="page-number"
+                        id="rightPageNumber"
+                    >
+                        02
+                    </span>
+
+                    <div
+                        class="album-photo"
+                        id="rightPhoto"
+                    >
+
+                        <span>YOUR PHOTO HERE ♡</span>
+
+                    </div>
+
+                    <h2 id="rightTitle">
+                        
+                    </h2>
+
+                    <p id="rightText">
+                    
+                    </p>
+
+                    <span class="page-sticker right-sticker">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="album-controls">
+
+                    <button
+                        class="secondary-btn"
+                        id="previousSpread"
+                    >
+                        ← Previous
+                    </button>
+
+                    <span id="spreadCounter">
+                        01 / 02
+                    </span>
+
+                    <button
+                        class="main-btn"
+                        id="nextSpread"
+                    >
+                        Turn the page →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<audio id="scrapbookSong" loop preload="auto">
+    <source src="assets/scrapbook-song.m4a" type="audio/mp4">
+</audio>
+
+    </section>
+<!-- MEMORY WALL -->
+<section id="memoryWallScreen" class="screen hidden">
+
+    <div class="memory-wall-heading">
+        <p>a reminder i am technically older/p>
+        <h1>Some memories never leave ♡</h1>
+    </div>
+
+    <div class="memory-wall" id="memoryWall">
+
+        <div class="memory-photo" style="--rotation: -7deg;">
+            <img src="assets/photo1.jpeg" alt="Our memory">
+            <span>wingardium leviosa dekh kitna pyara lag rha hai ♡</span>
+        </div>
+
+        <div class="memory-photo" style="--rotation: 5deg;">
+            <img src="assets/photo2.jpeg" alt="Our memory">
+            <span>ACHI HAI YE PIC HUH dekh kitna sundar lgra mere vajah se</span>
+        </div>
+
+        <div class="memory-photo" style="--rotation: -3deg;">
+            <img src="assets/photo3.jpeg" alt="Our memory">
+            <span>yayyyy asli bandars</span>
+        </div>
+
+        <div class="memory-photo" style="--rotation: 8deg;">
+            <img src="assets/photo4.jpeg" alt="Our memory">
+            <span>miss you yaar betu</span>
+        </div>
+
+    </div>
+
+    <p class="memory-ending">And these are only a few of them...</p>
+
+    <button class="main-btn" id="memoryWallNext">
+        aage chaloo ->
+    </button>
+
+</section>
+
+    <!-- 7. FINAL CALL SCREEN -->
+
+    <section class="screen" id="callScreen">
+
+        <div class="call-content">
+
+            <p class="eyebrow">
+                And now, one last chiz...
+            </p>
+
+            <h1>
+                You are never alone betu
+            </h1>
+
+            <p>
+                That was apni pyari memories
+                But you know mai kya krungi</p>
+                <p>
+                will make another one with you.
+            </p>
+
+            <a
+                href="https://meet.google.com/eoz-ewsb-xgr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="call-btn"
+            >
+                ♡ GHAR KI YAAD NI AAYI JASSI?  ♡
+            </a>
+
+            <p class="call-note">
+                wait krriii jldi aa
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
